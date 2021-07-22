@@ -1,10 +1,5 @@
-import React from 'react';
+import React from "react";
 
-class TimeCounter extends React.Component {
-
-    render() {
-        return(
-            <></>
-        );
-    }
-}
+export const TimeCounter = ({ start, stop, split }) => {
+  return <></>;
+};
