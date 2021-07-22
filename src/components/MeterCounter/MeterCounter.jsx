@@ -1,10 +1,5 @@
-import React from 'react';
+import React from "react";
 
-class MeterCounter extends React.Component {
-
-    render() {
-        return(
-            <></>
-        );
-    }
+export const MeterCounter = ({ }) => {
+  return <></>;
 }
