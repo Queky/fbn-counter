@@ -1,8 +1,8 @@
 {
-  "name": "fbn-counter",
+  "name": "swimming-long-distance-counter",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://queky.github.io/fbn-counter",
+  "homepage": "https://queky.github.io/swimming-long-distance-counter",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
