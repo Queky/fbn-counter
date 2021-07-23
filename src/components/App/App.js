@@ -22,8 +22,8 @@ function App() {
     //   </header>
     //   <p>Que pasa pavo</p>
     // </div>
-    <Title text={"Federación Bizkaina de Natación"}>
-      <Subtitle text={"Contador de larga distancia"}></Subtitle>
+    <Title text={"Contador de larga distancia"}>
+      <Subtitle text={"Preferencias"}></Subtitle>
     </Title>
   );
 }
