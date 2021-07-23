@@ -1,23 +1,21 @@
 {
   "files": {
-    "main.css": "/fbn-counter/static/css/main.a617e044.chunk.css",
-    "main.js": "/fbn-counter/static/js/main.335d0dca.chunk.js",
-    "main.js.map": "/fbn-counter/static/js/main.335d0dca.chunk.js.map",
-    "runtime-main.js": "/fbn-counter/static/js/runtime-main.1725a15b.js",
-    "runtime-main.js.map": "/fbn-counter/static/js/runtime-main.1725a15b.js.map",
-    "static/js/2.204dc7d7.chunk.js": "/fbn-counter/static/js/2.204dc7d7.chunk.js",
-    "static/js/2.204dc7d7.chunk.js.map": "/fbn-counter/static/js/2.204dc7d7.chunk.js.map",
-    "static/js/3.d4a1f376.chunk.js": "/fbn-counter/static/js/3.d4a1f376.chunk.js",
-    "static/js/3.d4a1f376.chunk.js.map": "/fbn-counter/static/js/3.d4a1f376.chunk.js.map",
-    "index.html": "/fbn-counter/index.html",
-    "static/css/main.a617e044.chunk.css.map": "/fbn-counter/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.204dc7d7.chunk.js.LICENSE.txt": "/fbn-counter/static/js/2.204dc7d7.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/fbn-counter/static/media/logo.6ce24c58.svg"
+    "main.css": "/swimming-long-distance-counter/static/css/main.42719405.chunk.css",
+    "main.js": "/swimming-long-distance-counter/static/js/main.75fb1d2c.chunk.js",
+    "main.js.map": "/swimming-long-distance-counter/static/js/main.75fb1d2c.chunk.js.map",
+    "runtime-main.js": "/swimming-long-distance-counter/static/js/runtime-main.7f87661b.js",
+    "runtime-main.js.map": "/swimming-long-distance-counter/static/js/runtime-main.7f87661b.js.map",
+    "static/js/2.be2fda7e.chunk.js": "/swimming-long-distance-counter/static/js/2.be2fda7e.chunk.js",
+    "static/js/2.be2fda7e.chunk.js.map": "/swimming-long-distance-counter/static/js/2.be2fda7e.chunk.js.map",
+    "index.html": "/swimming-long-distance-counter/index.html",
+    "static/css/main.42719405.chunk.css.map": "/swimming-long-distance-counter/static/css/main.42719405.chunk.css.map",
+    "static/js/2.be2fda7e.chunk.js.LICENSE.txt": "/swimming-long-distance-counter/static/js/2.be2fda7e.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/swimming-long-distance-counter/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1725a15b.js",
-    "static/js/2.204dc7d7.chunk.js",
-    "static/css/main.a617e044.chunk.css",
-    "static/js/main.335d0dca.chunk.js"
+    "static/js/runtime-main.7f87661b.js",
+    "static/js/2.be2fda7e.chunk.js",
+    "static/css/main.42719405.chunk.css",
+    "static/js/main.75fb1d2c.chunk.js"
   ]
 }
