@@ -2,7 +2,7 @@ import React from "react";
 
 export const Subtitle = ({ children, text }) => {
   const style = {
-    "text-align": "center",
+    "textAlign": "center",
   };
 
   return (
@@ -12,3 +12,5 @@ export const Subtitle = ({ children, text }) => {
     </>
   );
 };
+
+export default Subtitle;
