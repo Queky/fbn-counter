@@ -1,9 +1,17 @@
-import logo from "../../logo.svg";
 import "./App.css";
 import Title from "../Title/Title.jsx";
-import { Subtitle } from "../Subtitle/Subtitle";
+import Competition from "../Competition/Competition";
+import Configuration from "../Configuration/Configuration";
+import { useEffect, useState } from "react";
 
 function App() {
+
+  const [config, setConfig] = useState({lane: 0});
+
+  useEffect(() => {
+    //console.log('qqqq', config);
+  }, [config]);
+
   return (
     // <div className="App">
     //   <header className="App-header">
@@ -22,9 +30,14 @@ function App() {
     //   </header>
     //   <p>Que pasa pavo</p>
     // </div>
-    <Title text={"Contador de larga distancia"}>
-      <Subtitle text={"Preferencias"}></Subtitle>
-    </Title>
+    <>
+      <Title text={"Contador de larga distancia"}>
+      </Title>
+      <Configuration setConfig={setConfig}></Configuration>
+      <Competition config>
+
+      </Competition>
+    </>
   );
 }
 

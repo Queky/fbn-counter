@@ -1,5 +1,9 @@
 import React from "react";
 
-export const Lane = ({ }) => {
-  return <></>;
+export const Lane = ({ children }) => {
+  return (
+    <>
+      {children}
+    </>
+  );
 }
