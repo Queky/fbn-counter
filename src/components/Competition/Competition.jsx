@@ -5,11 +5,11 @@ export const Competition = ({children, config}) => {
 
   const multiplicate = (x, n) => Array.from(new Array(n), () => x);
 
-  const lane = <Lane></Lane>
+  const lane = (a) => <Lane key={a}></Lane>
 
   return (
     <>
-      {multiplicate(lane, config.lanes)}
+      {multiplicate(lane(1), config.lanes)}
       {children}
     </>
   );

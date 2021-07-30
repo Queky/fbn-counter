@@ -1,23 +1,22 @@
 import React from 'react';
-import { Button, ButtonGroup } from 'react-bootstrap';
-import Subtitle from '../Subtitle/Subtitle';
-import 'bootstrap/dist/css/bootstrap.css';
+import { useState } from 'react';
+import { DistanceConfiguration } from './DistanceConfiguration/DistanceConfiguration';
+import { LaneConfiguration } from './LaneConfiguration/LaneConfiguration';
 
 export const Configuration = ({children, setConfig}) => {
 
-  const style = {
-    "textAlign": "center",
-  };
-
+  const [lanes, setLanes] = useState(null);
+  const [distance, setDistance] = useState(null);
+  const [unit, setUnit] = useState(null);
 
   return (
     <>
-      <Subtitle text="Numero de calles"></Subtitle>
-      <ButtonGroup className="center" size="lg" style={style}>
-        <Button variant="primary" onClick={() => setConfig({lane: 6})}>6</Button>
-        <Button variant="primary" onClick={() => setConfig({lane: 8})}>8</Button>
-        <Button variant="primary" onClick={() => setConfig({lane: 10})}>10</Button>
-      </ButtonGroup>
+      <LaneConfiguration setLanes={setLanes}>
+
+      </LaneConfiguration>
+      <DistanceConfiguration setDistance={setDistance}>
+
+      </DistanceConfiguration>
     </>
   );
 };
