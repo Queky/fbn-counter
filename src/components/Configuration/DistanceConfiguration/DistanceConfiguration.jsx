@@ -11,6 +11,8 @@ export const DistanceConfiguration = ({children, setDistance}) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    marginLeft: '10%',
+    marginRight: '10%',
   }
 
   const setDistanceInConfig = (distance) => {
