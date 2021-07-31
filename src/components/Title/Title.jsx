@@ -2,7 +2,8 @@ import React from "react";
 
 export const Title = ({ children, text }) => {
   const style = {
-    "textAlign": "center",
+    textAlign: 'center',
+    marginTop: '2%',
   };
 
   return (
