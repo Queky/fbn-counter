@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Button, ButtonGroup } from "react-bootstrap";
 import Subtitle from "../../Subtitle/Subtitle";
@@ -33,6 +33,11 @@ export const LaneConfiguration = ({children, setLanes, setDistance}) => {
   const isDistanceActive = (distance) => {
     return activeDistance === distance;
   };
+
+  useEffect(() => {
+    setLanes(activeLane);
+    setDistance(activeDistance);
+  });
 
   return (
     <>

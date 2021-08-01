@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
 import Subtitle from '../../Subtitle/Subtitle';
@@ -23,6 +23,10 @@ export const DistanceConfiguration = ({children, setDistance}) => {
   const isActive = (distance) => {
     return selection === distance;
   }
+
+  useEffect(() => {
+    setDistance(selection);
+  });
 
   return(
     <>

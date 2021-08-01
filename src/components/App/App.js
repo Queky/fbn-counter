@@ -3,38 +3,25 @@ import Title from "../Title/Title.jsx";
 import Competition from "../Competition/Competition";
 import Configuration from "../Configuration/Configuration";
 import { useEffect, useState } from "react";
+import View from "../../domain/View/View";
 
 function App() {
 
-  const [config, setConfig] = useState({lane: 0});
+  const [config, setConfig] = useState({});
+  const [activeView, setActiveView] = useState(View.CONFIGURATION);
 
   useEffect(() => {
-    //console.log('qqqq', config);
+    console.log('qqqq', config);
+    if(config.pool) setActiveView(View.COMPETITION);
   }, [config]);
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    //   <p>Que pasa pavo</p>
-    // </div>
     <>
       <Title text={"Contador de larga distancia"}>
       </Title>
-      <Configuration setConfig={setConfig}></Configuration>
-      <Competition config>
+      <Configuration setConfig={setConfig} isVisible={activeView === View.CONFIGURATION}>
+      </Configuration>
+      <Competition config isVisible={activeView === View.COMPETITION}>
 
       </Competition>
     </>
