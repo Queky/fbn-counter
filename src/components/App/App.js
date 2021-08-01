@@ -6,34 +6,19 @@ import { useEffect, useState } from "react";
 
 function App() {
 
-  const [config, setConfig] = useState({lane: 0});
+  const [config, setConfig] = useState({});
+  const [configVisible, setConfigVisible] = useState(true);
 
   useEffect(() => {
-    //console.log('qqqq', config);
+    console.log('qqqq', config);
+    if(config.pool) setConfigVisible(false);
   }, [config]);
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    //   <p>Que pasa pavo</p>
-    // </div>
     <>
       <Title text={"Contador de larga distancia"}>
       </Title>
-      <Configuration setConfig={setConfig}></Configuration>
+      <Configuration setConfig={setConfig} isVisible={configVisible}></Configuration>
       <Competition config>
 
       </Competition>

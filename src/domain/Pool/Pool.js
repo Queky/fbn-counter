@@ -1,6 +1,6 @@
-export default class PoolSize {
+export default class Pool {
 
-  constructor({size: distance, lanes, unit}) {
+  constructor({distance, lanes, unit}) {
     this.distance = distance;
     this.lanes = lanes;
     this.unit = unit; 

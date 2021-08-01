@@ -1,10 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
+import { Button, ButtonGroup } from 'react-bootstrap';
+import Pool from '../../domain/Pool/Pool';
 import { DistanceConfiguration } from './DistanceConfiguration/DistanceConfiguration';
 import { LaneConfiguration } from './LaneConfiguration/LaneConfiguration';
 import UnitConfiguration from './UnitConfiguration/UnitConfiguration';
 
-export const Configuration = ({children, setConfig}) => {
+export const Configuration = ({children, setConfig, isVisible}) => {
 
   const [lanes, setLanes] = useState(null);
   const [distance, setDistance] = useState(null);
@@ -14,18 +16,24 @@ export const Configuration = ({children, setConfig}) => {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    marginLeft: '10%',
-    marginRight: '10%',
+    width: '20%',
     marginTop: '2%',
-    marginBottom: '2%',
+    marginLeft: '40%',
+  }
+
+  const finishConfig = () => {
+    setConfig({pool: new Pool({distance: distance, lanes: lanes, unit: unit})})
   }
 
   return (
-    <>
+    <div style={{visibility: isVisible ? 'visible' : 'hidden'}}>
       <LaneConfiguration setLanes={setLanes} setDistance={setDistance}/>
       <UnitConfiguration setUnit={setUnit} />
       <DistanceConfiguration setDistance={setDistance} />
-    </>
+      <ButtonGroup size="lg" style={style}>
+        <Button variant="primary" onClick={() => finishConfig()}>Comenzar</Button>
+      </ButtonGroup>
+    </div>
   );
 };
 

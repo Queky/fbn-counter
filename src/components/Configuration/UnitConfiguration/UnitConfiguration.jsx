@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, ButtonGroup } from 'react-bootstrap';
 import Subtitle from '../../Subtitle/Subtitle';
 
@@ -22,6 +22,10 @@ export const UnitConfiguration = ({setUnit}) => {
   const isActive = (unit) => {
     return selection === unit;
   }
+
+  useEffect(() => {
+    setUnit(selection);
+  });
 
   return(
     <>
