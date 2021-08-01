@@ -33,6 +33,7 @@ export const Configuration = ({children, setConfig, isVisible}) => {
       <ButtonGroup size="lg" style={style}>
         <Button variant="primary" onClick={() => finishConfig()}>Comenzar</Button>
       </ButtonGroup>
+      {children}
     </div>
   );
 };

@@ -3,23 +3,25 @@ import Title from "../Title/Title.jsx";
 import Competition from "../Competition/Competition";
 import Configuration from "../Configuration/Configuration";
 import { useEffect, useState } from "react";
+import View from "../../domain/View/View";
 
 function App() {
 
   const [config, setConfig] = useState({});
-  const [configVisible, setConfigVisible] = useState(true);
+  const [activeView, setActiveView] = useState(View.CONFIGURATION);
 
   useEffect(() => {
     console.log('qqqq', config);
-    if(config.pool) setConfigVisible(false);
+    if(config.pool) setActiveView(View.COMPETITION);
   }, [config]);
 
   return (
     <>
       <Title text={"Contador de larga distancia"}>
       </Title>
-      <Configuration setConfig={setConfig} isVisible={configVisible}></Configuration>
-      <Competition config>
+      <Configuration setConfig={setConfig} isVisible={activeView === View.CONFIGURATION}>
+      </Configuration>
+      <Competition config isVisible={activeView === View.COMPETITION}>
 
       </Competition>
     </>
