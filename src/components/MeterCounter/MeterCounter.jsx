@@ -1,5 +1,5 @@
 import React from "react";
 
-export const MeterCounter = ({ }) => {
+export const MeterCounter = ({ children, config }) => {
   return <></>;
 }

@@ -1,5 +1,5 @@
 import React from "react";
 
-export const LengthCounter = ({ }) => {
+export const LengthCounter = ({ children, config }) => {
   return <></>;
 }
