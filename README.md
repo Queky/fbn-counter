@@ -1,4 +1,4 @@
-# Swimming long distance counter\
+# Swimming long distance counter
 
 
 ## How to run application for development
